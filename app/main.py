@@ -8,8 +8,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.routing import APIRoute
 
-from app.settings import Settings
-from app.log import LogConfig
+from app.utils.settings import Settings
+from app.utils.log import LogConfig
 
 from app.endpoints import router
 

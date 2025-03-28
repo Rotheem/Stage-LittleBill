@@ -3,7 +3,7 @@ from fastapi import Depends
 import requests
 
 from app.dependencies import get_settings
-from app.settings import Settings
+from app.utils.settings import Settings
 
 
 logger = logging.getLogger("logger")

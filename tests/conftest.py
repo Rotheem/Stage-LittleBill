@@ -1,6 +1,6 @@
 from fastapi.testclient import TestClient
 from app.main import get_application
-from app.settings import Settings
+from app.utils.settings import Settings
 
 import pytest
 

@@ -26,6 +26,15 @@ class Settings(BaseSettings):
         extra="ignore",
     )
 
+    ####################
+    # Database settings #
+    ####################
+    SQLITE_DB: str
+    DATABASE_DEBUG: bool
+
+    ####################
+    # Hiboutik settings #
+    ####################
     HIBOUTIK_API_URL: str
     HIBOUTIK_API_USER: str
     HIBOUTIK_API_KEY: str

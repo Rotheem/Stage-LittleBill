@@ -6,7 +6,7 @@ from logging.handlers import QueueHandler, QueueListener
 from pathlib import Path
 from typing import Any
 
-from app.settings import Settings
+from app.utils.settings import Settings
 
 
 class ColoredConsoleFormatter(logging.Formatter):
@@ -90,7 +90,7 @@ class LogConfig:
                     "datefmt": "%d-%b-%y %H:%M:%S",
                 },
                 "console_formatter": {
-                    "()": "app.log.ColoredConsoleFormatter",
+                    "()": "app.utils.log.ColoredConsoleFormatter",
                 },
             },
             "handlers": {
